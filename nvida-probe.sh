@@ -32,6 +32,10 @@ sep_print "XORG LOG DETAILS"
 grep -E 'X.Org X |loading driver|Kernel command|Operating|NVIDIA GLX Module' /var/log/Xorg.0.log | \
 cut -d']' -f2- | sed 's/^ //' | tr -d "\t" 
 
-# Find GLX renderer info
-sep_print "GLXGEARS INFO"
-timeout 3 glxgears -info
+# Find GLX renderer info 
+
+
+if w $USER | grep -q ":0"; then 
+  sep_print "GLXGEARS INFO"
+  timeout 3 glxgears -info }
+fi
