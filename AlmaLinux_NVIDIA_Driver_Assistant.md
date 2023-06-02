@@ -1,6 +1,6 @@
 # AlmaLinux NVIDIA Driver Assistant
 
-The "NVidia Helper (or Assistant)" project aims to streamline the process of installing NVIDIA binary graphics drivers on AlmaLinux OS systems. It consists of three interactive Command Line Interface (CLI) utilities designed to enhance user experience and simplify troubleshooting and support activities.
+The "NVidia Assistant (Helper)" project aims to streamline the process of installing NVIDIA binary graphics drivers on AlmaLinux OS systems. It consists of three interactive Command Line Interface (CLI) utilities designed to enhance user experience and simplify troubleshooting and support activities.
 
 ## NVIDIA-PROBER
 `nvidia-prober.sh`: This utility scans the system for existing NVIDIA graphics hardware and any installed drivers. It collects important system information needed for driver installation, compatibility, and troubleshooting. The output of this tool can be used for support purposes and for preparing the system for new driver installation.
