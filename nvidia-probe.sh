@@ -24,20 +24,6 @@ print_run() {
   echo "$output" | log_it
 }
 
-print_run_grep() {
-  pattern=$1
-  shift
-  cmd="$@"
-  print_run "$cmd" | grep "$pattern"
-}
-
-print_grep() {
-  pattern=$1
-  shift
-  line="$@"
-  echo "$line" | grep "$pattern" | log_tit
-}
-
 # Timestamp
 sep_print "TIMESTAMP"
 ts=`date +%Y-%m-%d-%H-%M-%S`
@@ -83,4 +69,3 @@ if w $USER | grep -q ":0"; then
   sep_print "GLXGEARS INFO"
   timeout 5 glxgears -info | log_it
 fi
-
